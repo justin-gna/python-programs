@@ -16,3 +16,4 @@ for i in range(fence_num):
   total_area += calc_area(int(fence_h[i]), int(fence_h[i + 1]), int(fence_w[i]))
 
 print(total_area)
+ 
