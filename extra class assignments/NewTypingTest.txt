@@ -1,0 +1,67 @@
+# Justin G.
+# 2/11/2021 and 2/12/2021
+# Typing Test: A program that will calculate the wpm and accuracy 
+
+# import this time thing so we can delay the program
+import time
+
+# generating a sentence
+sentence = "hello, how are you. The weather is very nice today isn't it?"
+
+answer = input("Are you ready to see what you need to type? (y or n) ")
+answer = answer.lower()
+if not answer or answer != 'y':
+    print("\nok. i didn't really care if you wanted to play anyways")
+    exit(0)
+
+# showing the user the sentence they need to type
+print("The text below is what you need to type. \n")
+print(sentence)
+time.sleep(1.5)
+
+# countdown
+print("\nstarting in...")
+time.sleep(0.5)
+print("3")
+time.sleep(1)
+print("2")
+time.sleep(1)
+print("1")
+time.sleep(1)
+print("GO!")
+  
+# grabbing user input and timing the time it takes to type
+start_time = time.time()
+user_sentence = input()
+end_time = time.time()
+typing_time = end_time - start_time
+
+# calculating words per minute
+wpm = ((len(user_sentence)/5) / typing_time) * 60
+  
+# calculating characters per minute
+cpm = (len(user_sentence) / typing_time) * 60
+
+# calculating accuracy 
+smallest_len = 0
+longest_len = 0
+if len(user_sentence) < len(sentence):
+  smallest_len = len(user_sentence)
+  longest_len = len(sentence)
+else:
+  smallest_len = len(sentence)
+  longest_len = len(user_sentence)
+  
+num_correct = 0
+
+for i in range(smallest_len):
+  if user_sentence[i] == sentence[i]:
+    num_correct = num_correct + 1
+
+accuracy = (num_correct / longest_len) * 100
+# since wpm is calculated by counting every 5 charcters, the accuracy is less forgiving when one mistake is made, because then everything after it will be incorrect.
+
+print("\nWPM:",int(wpm))
+print("CPM:",int(cpm))
+print(f"ACCURACY: {accuracy:.2f}")
+print("\nThanks for playing!")

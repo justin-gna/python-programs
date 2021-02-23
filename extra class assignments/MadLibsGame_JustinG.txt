@@ -1,0 +1,212 @@
+# MadLibs game from feb. 10 2021
+import sys
+print("Welcome to MadLibs Game!")
+play = input("Would you like to begin? ")
+play = play.lower()
+i = 0
+# only plays the game if "play" is defined or if the first letter is a y
+while play and play[0] == 'y':
+  # asks for an input
+  greeting = input("enter a greeting: ")
+  # check if the input is not defined or does not contain only letters
+  if not greeting or not greeting.isalpha():
+    # while the input is not defined or does not contain only letters it will perform this loop and counts how many times the user inputs something that doesnt work. if they input the wrong thing 5 times it gives them the option to exit the program. once they input something that is acceptable the program moves on and resets the amount of times they inputted the wrong thing
+    while not greeting or not greeting.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      greeting = input("enter a greeting: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  adjective = input("enter an adjective: ")
+  i = 0
+  if not adjective or not adjective.isalpha():
+    while not adjective or not adjective.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      adjective = input("enter an adjective: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          sys.exit("Thanks for playing!")
+  insult = input("enter something you'd call someone you dislike: ")
+  i = 0
+  if not insult or not insult.isalpha():
+    while not insult or not insult.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      insult = input("enter something you'd call someone you dislike: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          sys.exit("Thanks for playing!")
+  holiday = input("enter a holiday: ")
+  i = 0
+  if not holiday or not holiday.isalpha():
+    while not holiday or not holiday.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      holiday = input("enter a holiday: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  place = input("enter a place: ")
+  i = 0
+  if not place or not place.isalpha():
+    while not place or not place.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      place = input("enter a place: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  verb = input("enter a verb (present tense): ")
+  i = 0
+  if not verb or not verb.isalpha():
+    while not verb or not verb.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      verb = input("enter a verb (present tense): ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  name = input("enter a name: ")
+  i = 0
+  if not name or not name.isalpha():
+    while not name or not name.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      name = input("enter a name: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  verb_2 = input("enter another verb (present tense): ")
+  i = 0
+  if not verb_2 or not verb_2.isalpha():
+    while not verb_2 or not verb_2.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      verb_2 = input("enter another verb (present tense): ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  organization = input("enter the name of an organization: ")
+  i = 0
+  if not organization or not organization.isalpha():
+    while not organization or not organization.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      organization = input("enter the name of an organization: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  verb_3 = input("enter another verb (past tense): ")
+  i = 0
+  if not verb_3 or not verb_3.isalpha():
+    while not verb_3 or not verb_3.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      verb_3 = input("enter another verb (past tense): ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  exclamation = input("enter an exclamation: ")
+  i = 0
+  if not exclamation or not exclamation.isalpha():
+    while not exclamation or not exclamation.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      exclamation = input("enter an exclamation: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  amount_of_time = input("enter an amount of time: ")
+  i = 0
+  if not amount_of_time:
+    while not amount_of_time or not amount_of_time.isdigit() or not amount_of_time.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters or numbers)")
+      amount_of_time = input("enter an amount of time: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+  bye = input("enter a way to say bye: ")
+  i = 0
+  if not bye or not bye.isalpha():
+    while not bye or not bye.isalpha():
+      i = i + 1
+      print("try again (enter only alphabet letters)")
+      bye = input("enter a way to say bye: ")
+      if i > 3:
+        play = input("do you really want to keep playing? ")
+        play = play.lower()
+        if play and play[0] == 'y':
+          i = 0
+        else:
+          i = 0
+          sys.exit("Thanks for playing!")
+
+  story = f"\"{greeting} you {adjective} {insult}. I was expecting you to show up here. You know, I've been wating for this moment since {holiday}. Finally you've showed up at my secret lair in {place}, and now you have nowhere to {verb}.\" \n \"You are mistaken Dr. {name}, It's actually I that has trapped you. I've been {verb_2} with the {organization}, and together we {verb_3} you at your own game.\" \n \"{exclamation}!\" \n \"Now time to lock you away for {amount_of_time}. {bye}, Dr. {insult}\""
+
+  print(story)
+
+  play = input("Would you like to play again? ")
+  play = play.lower()
+
+sys.exit("Thanks for playing!")
